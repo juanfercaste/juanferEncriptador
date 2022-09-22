@@ -33,4 +33,5 @@ document.querySelector(".copiar").addEventListener("click", function () {
   navigator.clipboard.writeText(encriptado);
   document.querySelector(".mensaje-primero").style.display = "block";
   document.querySelector(".mensaje-dos").style.display = "none";
+  document.querySelector(".input-text").value = "";
 });
