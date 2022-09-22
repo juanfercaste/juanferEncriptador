@@ -62,9 +62,10 @@ body {
   font-weight: 400;
   color: #5f3dc4;
 
-  flex-grow: 8;
+  height: 50rem;
 
   background-color: #e5dbff;
+  border-radius: 3.2rem;
   border: none;
   outline: none;
   resize: none;
@@ -194,7 +195,7 @@ body {
 }
 
 .btn-copiar button {
-  background-color: e5dbff;
+  background-color: #e5dbff;
   padding: 2rem 0;
 }
 
