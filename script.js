@@ -1,37 +1,52 @@
+"use strict";
 const mensaje = document.getElementById("input-text");
-let encriptado = "";
+const btnEncriptar = document.querySelector(".btn-primario");
+const btnDesencriptar = document.querySelector(".btn-secundario");
+const btnCopiar = document.querySelector(".copiar");
+let encriptado = 0;
 
-document.querySelector(".btn-primario").addEventListener("click", function () {
+const displayMensaje = function (display) {
+  document.querySelector(".mensaje-primero").style.display = display;
+};
+
+const displayMensaje2 = function (display2) {
+  document.querySelector(".mensaje-dos").style.display = display2;
+};
+
+const encriptadoValor = function (valor) {
+  document.querySelector(".encriptado").value = valor;
+};
+
+const encriptar = function () {};
+
+btnEncriptar.addEventListener("click", function () {
   encriptado = mensaje.value
     .replaceAll("e", "enter")
     .replaceAll("i", "imes")
     .replaceAll("o", "ober")
     .replaceAll("a", "ai")
     .replaceAll("u", "ufat");
-  document.querySelector(".mensaje-primero").style.display = "none";
-  document.querySelector(".mensaje-dos").style.display = "block";
-  document.querySelector(".encriptado").value = encriptado;
+  displayMensaje("none");
+  displayMensaje2("block");
+  encriptadoValor(encriptado);
   document.querySelector(".input-text").value = "";
 });
 
-document
-  .querySelector(".btn-secundario")
-  .addEventListener("click", function () {
-    encriptado = mensaje.value
-      .replaceAll("enter", "e")
-      .replaceAll("imes", "i")
-      .replaceAll("ober", "o")
-      .replaceAll("ai", "a")
-      .replaceAll("ufat", "u");
-    document.querySelector(".mensaje-primero").style.display = "none";
-    document.querySelector(".mensaje-dos").style.display = "block";
-    document.querySelector(".encriptado").value = encriptado;
-    console.log();
-  });
+btnDesencriptar.addEventListener("click", function () {
+  encriptado = mensaje.value
+    .replaceAll("enter", "e")
+    .replaceAll("imes", "i")
+    .replaceAll("ober", "o")
+    .replaceAll("ai", "a")
+    .replaceAll("ufat", "u");
+  displayMensaje("none");
+  displayMensaje2("block");
+  encriptadoValor(encriptado);
+});
 
-document.querySelector(".copiar").addEventListener("click", function () {
+btnCopiar.addEventListener("click", function () {
   navigator.clipboard.writeText(encriptado);
-  document.querySelector(".mensaje-primero").style.display = "block";
-  document.querySelector(".mensaje-dos").style.display = "none";
+  displayMensaje("block");
+  displayMensaje2("none");
   document.querySelector(".input-text").value = "";
 });
