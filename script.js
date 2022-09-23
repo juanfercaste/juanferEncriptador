@@ -6,8 +6,8 @@ document.querySelector(".btn-primario").addEventListener("click", function () {
     .replaceAll("e", "enter")
     .replaceAll("i", "imes")
     .replaceAll("o", "ober")
-    .replaceAll("u", "ufat")
-    .replaceAll("a", "ai");
+    .replaceAll("a", "ai")
+    .replaceAll("u", "ufat");
   document.querySelector(".mensaje-primero").style.display = "none";
   document.querySelector(".mensaje-dos").style.display = "block";
   document.querySelector(".encriptado").value = encriptado;
@@ -21,8 +21,8 @@ document
       .replaceAll("enter", "e")
       .replaceAll("imes", "i")
       .replaceAll("ober", "o")
-      .replaceAll("ufat", "u")
-      .replaceAll("ai", "a");
+      .replaceAll("ai", "a")
+      .replaceAll("ufat", "u");
     document.querySelector(".mensaje-primero").style.display = "none";
     document.querySelector(".mensaje-dos").style.display = "block";
     document.querySelector(".encriptado").value = encriptado;
