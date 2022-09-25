@@ -4,87 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
-    />
+
+    <!-- Primary Meta Tags -->
+<title>Encriptador Miss All Sunday</title>
+<meta name="title" content="Encriptador Miss All Sunday">
+<meta name="description" content="Encriptador de texto, desafio #1 del programa Oracle ONE, en la ruta de principiantes de programacion, desafio diseñado para utilizar todo lo aprendido en la primera ruta del programa">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="Encriptador Miss All Sunday">
+<meta property="og:description" content="Encriptador de texto, desafio #1 del programa Oracle ONE, en la ruta de principiantes de programacion, desafio diseñado para utilizar todo lo aprendido en la primera ruta del programa">
+<meta property="og:image" content="img/nico-preview.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="Encriptador Miss All Sunday">
+<meta property="twitter:description" content="Encriptador de texto, desafio #1 del programa Oracle ONE, en la ruta de principiantes de programacion, desafio diseñado para utilizar todo lo aprendido en la primera ruta del programa">
+<meta property="twitter:image" content="img/nico-preview.png">
+
+    <meta name="author" content="Juan Cerrato">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+
+    <title>Encriptador Miss All Sunday</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="queries.css" />
-    <title>JF--Encriptador</title>
+    <link rel="stylesheet" href="queries.css">
   </head>
-  <body class="bk">
-    <main>
-      <section class="container">
-        <div class="logo">
-          <img src="Logo.png" alt="logo de alura" />
+
+  <body>
+    <header clas="encabezado">
+      <div class="contenedor-titulo">
+        <div class="logo-alura">
+          <a href="https://www.aluracursos.com/"
+            ><img src="img/Logo-Editada.png" alt="logotipo de alura"
+          /></a>
         </div>
 
-        <div class="encriptador">
-          <div class="titulo">
-            <h1>Desafio del Encriptador</h1>
-            <ion-icon name="lock-closed-outline" class="titulo-icon"></ion-icon>
-          </div>
-          <textarea
-            placeholder="Ingresa el texto aqui"
-            id="input-text"
-            class="input-text"
-          ></textarea>
-          <div class="alerta">
-            <ion-icon name="alert-circle" class="alerta-icon"></ion-icon>
-            <p class="txt-alerta">Solo letras minusculas y sin acentos</p>
-          </div>
-          <div class="botones">
-            <button class="btn btn-primario">Encriptar</button>
-            <button class="btn btn-secundario">Desencriptar</button>
-          </div>
+        <div class="nombre-titulo">
+          <h1 class="titulo">Encriptador De Texto Miss All Sunday</h1>
+          <img
+            src="img/logo-nico.png"
+            alt="logo de nico robin en one piece"
+            class="img-titulo"
+          />
         </div>
+      </div>
+    </header>
 
-        <div class="mensaje">
-          <div class="mensaje-primero">
-            <div class="imagen-container">
-              <img
-                src="Muñeco.png"
-                alt="imagen de una pluma de tinta"
-                class="img-mensaje"
-              />
-            </div>
-
-            <div class="descripcion">
-              <p class="primero">Ningun mensaje fue encontrado</p>
-              <p class="segundo">
-                Ingresa el texto que deseas encriptar o decencriptar
-              </p>
-            </div>
-          </div>
-
-          <div class="mensaje-dos">
-            <div class="encriptado-container">
-              <textarea class="input-text encriptado"></textarea>
-            </div>
-
-            <div class="botones btn-copiar">
-              <button class="btn btn-secundario copiar">Copiar</button>
-            </div>
-          </div>
+    <main class="principal">
+      <div class="encriptador-principal">
+        <textarea
+          name="mensaje"
+          id="mensaje"
+          placeholder="Escriba su mensaje aqui"
+        ></textarea>
+        <div class="contenedor-alerta">
+          <ion-icon name="alert-circle"></ion-icon>
+          <p class="alerta">Solo se aceptan letras minusculas y sin acentos</p>
         </div>
-      </section>
+        <div class="contenedor-btn">
+          <button class="btn encriptar">
+            Encriptar <ion-icon name="lock-closed" class="icon"></ion-icon>
+          </button>
+          <button class="btn desencriptar">
+            Desencriptar <ion-icon name="lock-open" class="icon"></ion-icon>
+          </button>
+        </div>
+      </div>
+      <div class="encriptador-secundario">
+        <textarea name="mensaje" id="mensaje2" placeholder="No hay ningun texto encriptado"></textarea>
+        <button class="btn copiar">
+          Copiar<ion-icon name="clipboard"></ion-icon>
+        </button>
+      </div>
     </main>
-    <footer class="dev-informacion">
-      <a href="https://github.com/juanfercaste" target="_blank"
-        ><ion-icon name="logo-github" class="social-icon"></ion-icon
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/juan-cerrato-a33422167/"
-        target="_blank"
-        ><ion-icon name="logo-linkedin" class="social-icon"></ion-icon
-      ></a>
-      <p class="copyright">&copy; 2022-Juan Fernando Cerrato</p>
+
+    <footer class="pie-pagina">
+      <div class="dev-informacion">
+        <a href="https://github.com/juanfercaste" target="_blank"
+          ><ion-icon name="logo-github" class="dev-icon"></ion-icon></ion-icon
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/juan-cerrato-a33422167/"
+          target="_blank"
+          ><ion-icon name="logo-linkedin" class="dev-icon"></ion-icon></ion-icon
+        ></a>
+        <p class="copyright">&copy; 2022-Juan Fernando Cerrato</p>
+      </div>
     </footer>
 
     <script

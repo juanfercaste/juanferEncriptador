@@ -1,126 +1,254 @@
+/* 1366 px -- firs ever break point for desktop firts*/
+/* para usar rem en media queries 1rem es 16 pixels, no importa si se cambia en el html a 62.5 que son 10 pixeles*/
+/* 1rem =1em = 16px*/
+
+/* 1350/16 = 84.3 */
 @media (max-width: 84em) {
-  .container {
-    display: grid;
-    grid-template-columns: 5% 65% 25%;
-    gap: 2%;
-  }
-  .titulo h1,
-  .titulo-icon {
-    font-size: 4rem;
-    color: #5f3dc4;
-  }
 }
 
-@media (max-width: 60em) {
-  .container {
-    display: grid;
-    grid-template-columns: 0% 65% 30%;
+/*1150/16* = 71.8 */
+@media (max-width: 72em) {
+  body {
+    padding: 1rem 3rem;
   }
-
-  .titulo h1,
-  .titulo-icon {
-    margin-top: 1.2rem;
+  .titulo {
+    font-size: 3.6rem;
+  }
+  .principal {
+    background-position: 130%;
+  }
+  .encriptador-principal {
+    width: 50%;
+  }
+  .contenedor-alerta {
     font-size: 2.4rem;
   }
-  .imagen-container {
-    padding: 14rem 2.2rem 2.2rem 2.2rem;
+  .btn {
+    font-size: 2.4rem;
   }
-  .descripcion {
-    margin: 0 2rem 30rem 2rem;
-    gap: 1.6rem;
+  .copiar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 80%;
   }
-
-  .primero {
+  .dev-informacion,
+  .dev-icon {
+    font-size: 2rem;
+  }
+}
+/*944/16* = 59*/
+@media (max-width: 59em) {
+  .titulo {
+    font-size: 3rem;
+  }
+  .principal {
+    background-position: 150%;
+  }
+  .encriptador-principal {
+    width: 45%;
+    margin: 0 3rem;
+  }
+  .encriptador-principal textarea {
+    padding: 0;
+    background-position: -60% 110%;
+    font-size: 2rem;
+    padding-left: 15rem;
+  }
+  .encriptador-principal textarea::placeholder {
+    font-size: 2rem;
+  }
+  .contenedor-alerta {
     font-size: 1.8rem;
-    line-height: 1.8rem;
   }
-
-  .segundo {
-    font-size: 1.2rem;
-    line-height: 1.2rem;
+  .btn {
+    gap: 2rem;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+  }
+  .encriptador-secundario {
+    width: 26%;
+    gap: 1rem;
+  }
+  .copiar {
+    gap: 2rem;
+    width: 80%;
   }
 }
 
-@media (max-width: 42em) {
-  .container {
-    display: flex;
+/* 1350/16 = 84.3 */
+@media (max-width: 47em) {
+  .titulo {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .img-titulo {
+    width: 40%;
+  }
+  .principal {
+    background-position: 220%;
+  }
+  .encriptador-principal {
+    width: 50%;
+    margin: 0 2rem;
+  }
+  .encriptador-principal textarea {
+    padding: 0;
+    background-position: -180% 110%;
+    font-size: 1.5rem;
+    padding-left: 13rem;
+  }
+  .encriptador-principal textarea::placeholder {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+  }
+  .contenedor-alerta {
+    font-size: 1.4rem;
+  }
+  .btn {
+    gap: 1rem;
+    width: 50%;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+  }
+  .encriptador-secundario {
+    width: 20%;
+    gap: 1rem;
+  }
+  .copiar {
+    gap: 1rem;
+    width: 95%;
+  }
+}
+/* 544/16 =34 */
+@media (max-width: 34em) {
+  body {
+    padding: 2rem;
+  }
+  .contenedor-titulo {
+    flex-direction: column;
+    height: 13rem;
+    margin-bottom: 2rem;
+  }
+  .nombre-titulo {
+    flex-direction: column;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .img-titulo {
+    width: 25%;
+  }
+  .principal {
+    height: auto;
+    width: 100%;
+    background-position: left;
+    padding-top: 2rem;
+    flex-direction: column;
+    background-image: none;
+  }
+  .encriptador-principal {
+    width: 80%;
+    margin: 0;
+    gap: 1rem;
+  }
+  .encriptador-principal textarea {
+    background-position: -150% 110%;
+    padding-left: 11rem;
+  }
+  .contenedor-alerta {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  .btn {
+    gap: 1rem;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+  }
+  .encriptador-secundario {
+    width: 80%;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+  .copiar {
+    gap: 1rem;
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 22em) {
+  body {
+    padding: 1rem;
+  }
+  .contenedor-titulo {
+    flex-direction: column;
+    height: 14rem;
+    margin-bottom: 2rem;
+  }
+  .nombre-titulo {
     flex-direction: column;
   }
 
-  .encriptador {
-    padding: 0;
-    height: 50%;
+  .logo-alura {
+    margin-left: 10rem;
+    margin-bottom: 1rem;
   }
-
-  .input-text {
-    width: 100%;
-    height: 30rem;
-    font-size: 2rem;
-  }
-
-  .logo {
-    text-align: center;
-  }
-
   .titulo {
-    margin-top: 2rem;
-    justify-content: center;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
   }
-
-  .titulo h1 {
-    margin-top: 1.2rem;
-    font-size: 2.4rem;
+  .img-titulo {
+    width: 40%;
   }
-
-  .botones {
+  .principal {
+    height: auto;
+    width: 100%;
+    padding-top: 2rem;
+    flex-direction: column;
+    background-image: none;
+  }
+  .encriptador-principal {
+    width: 80%;
+    margin: 0;
     gap: 1rem;
   }
-
-  .mensaje {
-    height: 25rem;
+  .encriptador-principal textarea {
+    background-image: none;
+    padding: 2rem 0;
   }
-  .imagen-container {
-    padding: 0;
-    text-align: center;
+  .contenedor-alerta {
+    font-size: 1.4rem;
+    margin-bottom: 0;
   }
-  .img-mensaje {
-    width: 30%;
-  }
-
-  .encriptado {
-    background-color: #e5dbff;
-    height: auto;
-
-    font-family: inherit;
-    font-size: 2.4rem;
-    line-height: 3.6rem;
-  }
-  .btn-copiar {
-    display: flex;
-    justify-content: center;
-  }
-  .descripcion {
-    margin: 0;
-  }
-}
-
-@media (max-width: 42em) {
-  .titulo h1 {
-    font-size: 2rem;
-  }
-  .img-mensaje {
-    width: 50%;
-  }
-
   .btn {
-    width: 32.8rem;
-    padding: 1.4rem 0;
-    border-radius: 2.4rem;
-    font-size: 1.6rem;
-    cursor: pointer;
+    gap: 1rem;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+    margin-bottom: 5rem;
   }
-  .btn-copiar button {
-    padding: 1.4rem 0;
+  .encriptador-secundario {
+    width: 80%;
+    gap: 1rem;
+    padding: 0 2rem;
   }
-}
+  .copiar {
+    gap: 1rem;
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+  .dev-informacion,
+  .dev-icon {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.8rem;
+    color: #e9d5ff;
+  }
+} ;
