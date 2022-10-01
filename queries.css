@@ -38,6 +38,19 @@
     font-size: 2rem;
   }
 }
+/* 1082/16 =68*/
+@media (max-width: 68em) {
+  .principal {
+    background-position: 140%;
+  }
+}
+/* 1000/16 =63*/
+@media (max-width: 63em) {
+  .principal {
+    background-position: 150%;
+  }
+}
+
 /*944/16* = 59*/
 @media (max-width: 59em) {
   .titulo {
@@ -79,6 +92,12 @@
   }
 }
 
+/* 914/16 =57*/
+@media (max-width: 57em) {
+  .principal {
+    background-position: 160%;
+  }
+}
 /* 1350/16 = 84.3 */
 @media (max-width: 47em) {
   .titulo {
